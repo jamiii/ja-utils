@@ -36,5 +36,6 @@ epub_show_urls = 'footnote'
 
 # -- Options for Theme
 html_theme_options = {
-    'logo_only': True
+    'logo_only': True,
+    'display_version': False
 }
