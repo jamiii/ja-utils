@@ -8,8 +8,14 @@
 #%load_ext autoreload
 #%autoreload 2
 
+from pathlib import Path
 from IPython.display import display
 
+def path_info(path: Path, no_files: int = 3):
+    assert isinstance(path, Path), 'path should be a Path object'
+    display([[e.name, e.stat().st_size] for e in L(path.ls())])
+    display([list(d.name + d.ls(no_files) + d.stat().st_size) for d in path.iterdir() if d.is_dir()])
+    
 
 # source: https://github.com/PaleNeutron/jupyter2clipboard
 def to_clipboard( content ):
