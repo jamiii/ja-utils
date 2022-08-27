@@ -38,7 +38,7 @@ html_logo = "../img/logo.png"
 
 # -- Options for Theme, https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html#
 html_theme_options = {
-    'logo_only': True,
-    'display_version': True,
-    'style_nav_header_background': '#998129'
+    'logo_only': False,
+    'display_version': True
+    # 'style_nav_header_background': '#998129'
 }
