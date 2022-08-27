@@ -10,5 +10,5 @@ Example Usage
 >>> import ja-utils
 
 #Reload this module in Jupyter Notebook
-%load_ext autoreload
-%autoreload 2
+#%load_ext autoreload
+#%autoreload 2
