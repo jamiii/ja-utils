@@ -1,17 +1,18 @@
-# Use 
-# import sys
-# utils_path = '/path_to/ja-utils'
-# sys.path.append(utils_path)
-# import utils
-#
-#Reload this module in Jupyter
-#%load_ext autoreload
-#%autoreload 2
+"""
+JA Utils - Python module for nbs
+"""
+
+__version__ = "0.1.0"
 
 from pathlib import Path
 from IPython.display import display
 
 def path_info(path: Path, no_files: int = 3):
+    """
+    Return path information like files, directories, and file size
+    :parm path: path object
+    :type kind: Path
+    """
     assert isinstance(path, Path), 'path should be a Path object'
     display([[e.name, e.stat().st_size] for e in L(path.ls())])
     display([list(d.name + d.ls(no_files) + d.stat().st_size) for d in path.iterdir() if d.is_dir()])
