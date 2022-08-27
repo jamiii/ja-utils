@@ -34,7 +34,7 @@ html_theme = 'sphinx_rtd_theme'
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
-# -- Options for Theme
+# -- Options for Theme, https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html#
 html_theme_options = {
     'logo_only': True,
     'display_version': True,
