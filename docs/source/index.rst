@@ -9,5 +9,4 @@ Contents
 --------
 
 .. toctree::
-    one
-    two
+    usage
