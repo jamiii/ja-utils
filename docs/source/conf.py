@@ -34,6 +34,10 @@ html_theme = 'sphinx_rtd_theme'
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
+# auto api, https://sphinx-autoapi.readthedocs.io/en/latest/tutorials.html#setting-up-automatic-api-documentation-generation
+extensions = ['autoapi.extension']
+autoapi_dirs = ["../../"]
+
 html_logo = "../img/logo.png"
 
 # -- Options for Theme, https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html#
