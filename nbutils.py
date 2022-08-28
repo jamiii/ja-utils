@@ -10,9 +10,11 @@ from IPython.display import display
 def path_info(path: Path, no_files: int = 3):
     """
     Return path information like files, directories, and file size
-    
-    :parm path: path object
-    :type kind: Path
+
+    :param path: path object
+    :type path: Path
+    :param no_files: number of files to list per dir
+    :type no_files: int
     """
     assert isinstance(path, Path), 'path should be a Path object'
     display([[e.name, e.stat().st_size] for e in L(path.ls())])
