@@ -3,7 +3,8 @@ Usage
 
 .. _installation:
 Example Usage
-------------
+-------------
+
 >>> import sys
 >>> utils_path = '/path_to/ja-utils'
 >>> sys.path.append(utils_path)
