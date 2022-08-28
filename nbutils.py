@@ -10,6 +10,7 @@ from IPython.display import display
 def path_info(path: Path, no_files: int = 3):
     """
     Return path information like files, directories, and file size
+    
     :parm path: path object
     :type kind: Path
     """
