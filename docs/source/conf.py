@@ -36,7 +36,7 @@ epub_show_urls = 'footnote'
 
 # auto api, https://sphinx-autoapi.readthedocs.io/en/latest/tutorials.html#setting-up-automatic-api-documentation-generation
 extensions = ['autoapi.extension']
-autoapi_dirs = ["../ja-utils"]
+autoapi_dirs = ["../.."]
 
 html_logo = "../img/logo.png"
 
