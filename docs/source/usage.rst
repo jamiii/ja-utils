@@ -7,6 +7,7 @@ Example Usage
 -------------
 
 .. code-block:: console
+    
     import sys
     utils_path = '/path_to/ja-utils'
     import ja-utils
