@@ -2,6 +2,7 @@ Usage
 =====
 
 .. _installation:
+    :noindex:
 
 Example Usage
 -------------
