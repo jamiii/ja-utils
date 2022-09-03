@@ -6,6 +6,9 @@
 Welcome to ja-utils's documentation!
 ====================================
 
+**ja-utils** is a set of utilities focused on assisting ML related routines using 
+Juypiter Notebooks and Kaggle.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
@@ -18,3 +21,6 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+.. note::
+   Under development
