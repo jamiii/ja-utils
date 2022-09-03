@@ -9,6 +9,4 @@ Contents
 --------
 
 .. toctree::
-    usage
-    api
-    README
+    
