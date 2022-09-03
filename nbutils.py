@@ -30,7 +30,7 @@ def seed_everything(seed: int = 42, verbose = False):
     Seed numpy, torch, etc. to provide consistant train/val comparisons.
     :param seed: value to seed backend routines
     :type seed: int
-    :param verbose: display loaded modules that have been seeded
+    :param verbose: display result of modules that have been seeded
     """
     assert isinstance(seed, int), 'seed must be int'
     res = []
@@ -42,7 +42,11 @@ def seed_everything(seed: int = 42, verbose = False):
     except NameError as ne: res.append(ne); pass
     try: torch.cuda.manual_seed(seed)
     except NameError as ne: res.append(ne); pass
+    try: torch.cuda.manual_seed_all(seed)
+    except NameError as ne: res.append(ne); pass
     try: torch.backends.cudnn.deterministic = True
+    except NameError as ne: res.append(ne); pass
+    try: torch.backends.cudnn.benchmark = True
     except NameError as ne: res.append(ne); pass
     if verbose:
         print (res)
