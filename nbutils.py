@@ -6,6 +6,11 @@ __version__ = "0.1.0"
 
 from pathlib import Path
 from IPython.display import display
+import random
+import os
+import numpy as np
+import torch
+
 
 def path_info(path: Path, no_files: int = 3):
     """
@@ -20,6 +25,27 @@ def path_info(path: Path, no_files: int = 3):
     display([[e.name, e.stat().st_size] for e in L(path.ls())])
     display([list(d.name + d.ls(no_files) + d.stat().st_size) for d in path.iterdir() if d.is_dir()])
     
+def seed_everything(seed: int = 42, verbose = False):
+    """
+    Seed numpy, torch, etc. to provide consistant train/val comparisons.
+    :param seed: value to seed backend routines
+    :type seed: int
+    :param verbose: display loaded modules that have been seeded
+    """
+    assert isinstance(seed, int), 'seed must be int'
+    res = []
+    try: random.seed(seed)
+    except NameError as ne: res.append(ne); pass
+    os.environ['PYTHONHASHSEED'] = str(seed)
+    np.random.seed(seed)
+    try: torch.manual_seed(seed)
+    except NameError as ne: res.append(ne); pass
+    try: torch.cuda.manual_seed(seed)
+    except NameError as ne: res.append(ne); pass
+    try: torch.backends.cudnn.deterministic = True
+    except NameError as ne: res.append(ne); pass
+    if verbose:
+        print (res)
 
 # source: https://github.com/PaleNeutron/jupyter2clipboard
 def to_clipboard( content ):
