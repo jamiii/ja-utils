@@ -10,6 +10,7 @@ Welcome to ja-utils's documentation!
 Juypiter Notebooks and Kaggle.
 
 .. note:
+
    under development, 'source <https://github.com/jamiii/ja-utils>'
 
 .. toctree::
