@@ -9,10 +9,6 @@ Welcome to ja-utils's documentation!
 **ja-utils** is a set of utilities focused on assisting ML related routines using 
 Juypiter Notebooks and Kaggle.
 
-.. note:
-
-   under development, 'source <https://github.com/jamiii/ja-utils>' why not working?
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
@@ -27,4 +23,4 @@ Indices and tables
 * :ref:`search`
 
 .. note::
-   Under development
+   under development, 'source <https://github.com/jamiii/ja-utils>'
