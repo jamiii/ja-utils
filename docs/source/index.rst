@@ -11,7 +11,7 @@ Juypiter Notebooks and Kaggle.
 
 .. note:
 
-   under development, 'source <https://github.com/jamiii/ja-utils>'
+   under development, 'source <https://github.com/jamiii/ja-utils>' why not working?
 
 .. toctree::
    :maxdepth: 2
