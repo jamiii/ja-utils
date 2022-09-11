@@ -28,4 +28,4 @@ exclude_patterns = []
 # https://sphinx-themes.org/
 
 html_theme = 'python_docs_theme' # 'pydata_sphinx_theme' # 'python_docs_theme' # 'sphinx_rtd_theme'
-html_static_path = ['_static']
+# html_static_path = ['_static'] # remove warning, github will not push if empty
