@@ -12,6 +12,8 @@ Juypiter Notebooks and Kaggle.
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   
+   api
 
 
 
