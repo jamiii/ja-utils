@@ -23,4 +23,4 @@ Indices and tables
 * :ref:`search`
 
 .. note::
-   under development, 'source <https://github.com/jamiii/ja-utils>'
+   under development, `source <https://github.com/jamiii/ja-utils>`_
