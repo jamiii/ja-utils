@@ -8,8 +8,8 @@ from pathlib import Path
 from IPython.display import display
 import random
 import os
-import numpy as np
-import torch
+#import numpy as np
+#import torch
 
 
 def path_info(path: Path, no_files: int = 3):
@@ -28,6 +28,7 @@ def path_info(path: Path, no_files: int = 3):
 def seed_everything(seed: int = 42, verbose = False):
     """
     Seed numpy, torch, etc. to provide consistant train/val comparisons.
+    
     :param seed: value to seed backend routines
     :type seed: int
     :param verbose: display result of modules that have been seeded

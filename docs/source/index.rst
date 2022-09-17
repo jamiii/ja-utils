@@ -14,6 +14,7 @@ Juypiter Notebooks and Kaggle.
    :caption: Contents:
    
    api
+   modules
 
 
 
