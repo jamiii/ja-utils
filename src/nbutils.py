@@ -62,11 +62,12 @@ def to_clipboard( content ):
     
     :returns: str
     
-    Example usage
-    from pytz import timezone
-    tz = timezone("US/Eastern")
-    _version = datetime.now(tz).strftime('%y%m%d-%H-%M')
-    utils.to_clipboard(_version);
+    .. code-block:: python
+    
+        from pytz import timezone
+        tz = timezone("US/Eastern")
+        _version = datetime.now(tz).strftime('%y%m%d-%H-%M')
+        utils.to_clipboard(_version);
     """
     content = f"String.raw`{content}`"
     ipy = get_ipython()
