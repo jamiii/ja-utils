@@ -53,17 +53,22 @@ def seed_everything(seed: int = 42, verbose = False):
         print (res)
 
 # source: https://github.com/PaleNeutron/jupyter2clipboard
-def to_clipboard( content ):
+def to_clipboard( content: str ) -> str:
     """
     A function that copies a str content to your clipboard when run in Jupyter.
     
-    :param content: content to copy to the local clipboard
-    :type content: str
+    Parameters
+    ----------
+    content
+        the content to copy to the local clipboard
     
-    :returns: str
+    Returns
+    -------
+        str
+            copied content
     
     .. code-block:: python
-    
+
         from pytz import timezone
         tz = timezone("US/Eastern")
         _version = datetime.now(tz).strftime('%y%m%d-%H-%M')
