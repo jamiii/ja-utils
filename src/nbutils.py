@@ -8,8 +8,8 @@ from pathlib import Path
 from IPython.display import display
 import random
 import os
-#import numpy as np
-#import torch
+import numpy as np
+import torch
 
 
 def path_info(path: Path, no_files: int = 3):
