@@ -1,3 +1,4 @@
 pydata-sphinx-theme
 python_docs_theme
 IPython
+numpy
