@@ -55,7 +55,7 @@ def seed_everything(seed: int = 42, verbose = False):
 # source: https://github.com/PaleNeutron/jupyter2clipboard
 def to_clipboard( content: str ) -> str:
     """
-    A function that copies a str content to your clipboard when run in Jupyter.
+    A function that copies str content to your clipboard when run in Jupyter.
     
     Parameters
     ----------
@@ -69,10 +69,21 @@ def to_clipboard( content: str ) -> str:
     
     .. code-block:: python
 
+        # kaggle dataset - https://www.kaggle.com/datasets/jmiloser/utils
+        import sys
+        
+        package_paths = ['/kaggle/input/utils/']
+        for pth in package_paths:
+            sys.path.append(pth)
+
+        from nbutils import to_clipboard, seed_everything
+        from datetime import datetime
         from pytz import timezone
+        
         tz = timezone("US/Eastern")
-        _version = datetime.now(tz).strftime('%y%m%d-%H-%M')
-        utils.to_clipboard(_version);
+        
+        to_clipboard(datetime.now(tz).strftime('%y%m%d-%H-%M: '));        
+        
     """
     content = f"String.raw`{content}`"
     ipy = get_ipython()
